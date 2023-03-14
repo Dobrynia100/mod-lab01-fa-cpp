@@ -5,7 +5,7 @@
 
 #include "fun.h"
 
-unsigned int faStr1(const char* str) {//нет цифр
+unsigned int faStr1(const char* str) {
     int  N = 0;
     bool let = false, num = false;
     for (int i = 0; i < strlen(str); i++) {
@@ -28,13 +28,12 @@ unsigned int faStr1(const char* str) {//нет цифр
     }
     return N;
 }
-unsigned int faStr2(const char* str) {//заглав лат
+unsigned int faStr2(const char* str) {
     int N = 0;
     bool first = true, check = false;
     for (int i = 0; i < strlen(str); i++) {
         if (isupper(str[i]) && first) {
             first = false;
-
         }
         if (!isalpha(str[i]) && !isspace(str[i]))check = true;
         if (isspace(str[i])) {
@@ -42,12 +41,11 @@ unsigned int faStr2(const char* str) {//заглав лат
             first = true;
             check = false;
         }
-
     }
     if (!check && !first)N++;
     return N;
 }
-unsigned int faStr3(const char* str) {//сред длин
+unsigned int faStr3(const char* str) {
     int Nwords = 0, Nlet = 0;
     bool word = false;
     for (int i = 0; i < strlen(str); i++) {

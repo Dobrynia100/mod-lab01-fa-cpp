@@ -1,15 +1,14 @@
 // Copyright 2022 UNN-IASR
-#include "fun.h"
-
 #include <iostream>
 
-using namespace std;
+#include "fun.h"
+
+
 
 int main() {
     const char *str = "qwe4  gftt e 555gr rrgr grhh Lat Nat";
-
-   cout<<faStr1(str)<<endl;
-   cout<<faStr2(str) << endl;
-   cout<<faStr3(str) << endl;
+    std::cout << faStr1(str) << std::endl;
+    std::cout << faStr2(str) << std::endl;
+    std::cout << faStr3(str) << std::endl;
     return 0;
 }
